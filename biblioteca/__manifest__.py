@@ -12,8 +12,9 @@
                      ],
     'website': "http://www.altia.es",
     'category': 'Altia Desarrollo',
-    'version': '14.0.1.0.0',
+    'version': '15.0.0.0.1',
     'installable': True,
+    'application': True,
     'depends': ['base',
                 ],
     

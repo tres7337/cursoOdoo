@@ -3,3 +3,4 @@ encoding//biblioteca/__init__.py=utf-8
 encoding//biblioteca/__manifest__.py=utf-8
 encoding//biblioteca/models/__init__.py=utf-8
 encoding//biblioteca/models/bibliotecaTestModel.py=utf-8
+encoding//biblioteca/models/bibliotecaTestModelDos.py=utf-8
