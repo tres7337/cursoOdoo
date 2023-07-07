@@ -21,6 +21,7 @@
     # always loaded
     'data': [                   
         'views/bibliotecaAccionesView.xml',
+        'views/bibliotecaMenus.xml',
     ],
     'qweb': [
 

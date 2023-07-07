@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+	<!-- Pagina principal -->
+	<menuitem
+            id="bibliotecaMenuPrincipal"
+            name="Biblioteca"
+            web_icon="biblioteca,static/src/img/icono.png"
+            sequence="0"
+			/>
+	
+	<!-- Reservas -->
+	<menuitem 
+        	id="bibliotecaReserva" 
+        	name="Reserva"
+        	parent="bibliotecaMenuPrincipal" 
+        	action="bibliotecaReservaAccion"
+         	sequence="0"
+			/>
+
+	<!-- Configuracion -->		
+	<menuitem
+            id="bibliotecaConfiguracion"
+            name="Configuracion"
+            parent="bibliotecaMenuPrincipal"
+            sequence="1" 
+            /> 
+	
+	<!-- Libro -->
+	 <menuitem 
+	    	id="bibliotecaLibro" 
+	    	name="Libro"
+	    	parent="bibliotecaConfiguracion" 
+	    	action="bibliotecaLibroAccion"
+	     	sequence="0"
+	     	/>
+	
+	<!-- Categoria -->
+	<menuitem 
+        	id="bibliotecaCategoria" 
+        	name="Categoria"
+        	parent="bibliotecaConfiguracion" 
+        	action="bibliotecaCategoriaAccion"
+         	sequence="1"
+         	/>
+         	
+	
+</odoo>
