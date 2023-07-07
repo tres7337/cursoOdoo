@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+		  
+		  	<!-- Vista form de libro -->
+			<record id="bibliotecaLibroFormView" model="ir.ui.view">
+				<field name="name">Vista formulario de libro</field>
+				<field name="model">biblioteca.libro</field>
+				<field name="arch" type="xml">
+					<form string="Libro">
+						<sheet>
+							<group>
+								<field name="name" />
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+			<!-- Vista tree de libro -->
+			<record id="bibliotecaLibroTreeView" model="ir.ui.view">
+				<field name="name">Vista arbol de libro</field>
+				<field name="model">biblioteca.libro</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name" />
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>

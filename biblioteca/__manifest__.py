@@ -22,6 +22,9 @@
     'data': [                   
         'views/bibliotecaAccionesView.xml',
         'views/bibliotecaMenus.xml',
+        'views/bibliotecaLibroView.xml',
+        'views/bibliotecaReservaView.xml',
+        'views/bibliotecaCategoriaView.xml',
     ],
     'qweb': [
 

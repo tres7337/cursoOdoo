@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+		  
+		  	<!-- Vista form de reserva -->
+			<record id="bibliotecaReservaFormView" model="ir.ui.view">
+				<field name="name">Vista formulario de reserva</field>
+				<field name="model">biblioteca.reserva</field>
+				<field name="arch" type="xml">
+					<form string="Reserva">
+						<sheet>
+							<group>
+								<field name="name" />
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+		  	<!-- Vista tree de reserva -->
+			<record id="bibliotecaReservaTreeView" model="ir.ui.view">
+				<field name="name">Vista arbol de reserva</field>
+				<field name="model">biblioteca.reserva</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name" />
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>

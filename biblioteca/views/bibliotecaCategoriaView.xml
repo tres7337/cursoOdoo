@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+		  
+		  	<!-- Vista form de categoria -->
+			<record id="bibliotecaCategoriaFormView" model="ir.ui.view">
+				<field name="name">Vista formulario de categoria</field>
+				<field name="model">biblioteca.categoria</field>
+				<field name="arch" type="xml">
+					<form string="Categoria">
+						<sheet>
+							<group>
+								<field name="name" />
+							</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+		  	<!-- Vista tree de categoria -->
+			<record id="bibliotecaCategoriaTreeView" model="ir.ui.view">
+				<field name="name">Vista arbol de categoria</field>
+				<field name="model">biblioteca.categoria</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="name" />
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>
