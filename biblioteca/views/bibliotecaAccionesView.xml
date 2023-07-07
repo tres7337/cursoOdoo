@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record model="ir.actions.act_window" id="bibliotecaLibroAccion">
+		<field name="name">Accion libro</field>
+		<field name="res_model">biblioteca.libro</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="bibliotecaCategoriaAccion">
+		<field name="name">Accion categoria</field>
+		<field name="res_model">biblioteca.categoria</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+	<record model="ir.actions.act_window" id="bibliotecaReservaAccion">
+		<field name="name">Accion reserva</field>
+		<field name="res_model">biblioteca.reserva</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
+</odoo>

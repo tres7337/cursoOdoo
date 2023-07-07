@@ -19,10 +19,11 @@
                 ],
     
     # always loaded
-    'data': [                    
+    'data': [                   
+        'views/bibliotecaAccionesView.xml',
     ],
     'qweb': [
-        
+
     ],
     # only loaded in demonstration mode
 }
