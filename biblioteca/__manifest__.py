@@ -19,7 +19,8 @@
                 ],
     
     # always loaded
-    'data': [                   
+    'data': [   
+        'security/ir.model.access.csv',                 
         'views/bibliotecaAccionesView.xml',
         'views/bibliotecaMenus.xml',
         'views/bibliotecaLibroView.xml',
