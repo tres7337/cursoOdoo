@@ -46,7 +46,7 @@ class bibliotecaLibro(models.Model):
     editorial = fields.Char('Editorial')
     
     categ_ids = fields.Many2many(
-        comodel_name="biblioteca.libro.categoria",
+        comodel_name="biblioteca.categoria",
         relation="biblioteca_libro_categoria_rel",
         column1="libro_id",
         column2="categoria_id",
