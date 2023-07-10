@@ -6,6 +6,7 @@ Created on 6 jul 2023
 '''
 
 from odoo import api, fields, models, _
+from datetime import datetime
 
 
 class bibliotecaLibro(models.Model):
@@ -15,4 +16,47 @@ class bibliotecaLibro(models.Model):
     _order = "name desc"
     
     
-    name = fields.Char('Nombre')
+    title = fields.Char('Title', required=True)
+    author = fields.Char('Author')
+    name = fields.Char('Name', compute='_calculaNombre')
+      
+    @api.depends('title','author')
+    def _calculaNombre(self):
+        for record in self:
+            value = ''
+            if record.title:
+                value += record.title
+            value +=','
+            if record.author:
+                value += record.author
+            record.name = value
+            
+    year = fields.Selection (selection='_calculaYear', required=True)
+    
+    def _calculaYear(self):
+        year = datetime.now().year + 1
+        array_years = []
+        
+        for i in range(2016, year):
+            array_years.append((str(i),str(i)))
+        return array_years
+    
+    synopsis = fields.Html('Synopsis')
+    pages = fields.Integer('Number of pages')
+    editorial = fields.Char('Editorial')
+    
+    categ_ids = fields.Many2many(
+        comodel_name="biblioteca.libro.categoria",
+        relation="biblioteca_libro_categoria_rel",
+        column1="libro_id",
+        column2="categoria_id",
+        string="Categories"
+    )
+    
+    book = fields.Binary('Book file', required=True)
+    
+    
+    
+    
+    
+    
