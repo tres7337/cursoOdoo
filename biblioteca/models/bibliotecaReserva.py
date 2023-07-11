@@ -47,3 +47,20 @@ class bibliotecaReserva(models.Model):
             record.name = value
     
     
+    @api.model                
+    def create(self, vals):
+        if 'start_date' in vals:
+            vals['end_date'] = self._calculaFechaFin(vals['start_date'])
+        return super(bibliotecaReserva, self).create(vals)
+    
+    
+    def write(self, vals):
+        if 'start_date' in vals:
+            vals['end_date'] = self._calculaFechaFin(vals['start_date'])
+        return super(bibliotecaReserva, self).write(vals)
+    
+    
+    def _calculaFechaFin(self,start_date):
+        fecha = fields.Date.from_string(start_date)
+        fecha_fin = fecha + timedelta(days=3)  
+        return fecha_fin.strftime("%Y-%m-%d")

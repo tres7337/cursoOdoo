@@ -59,10 +59,11 @@ class bibliotecaLibro(models.Model):
     @api.constrains('title','year')
     def _compruebaLibro(self):
         for record in self:
-            cuentaRepes = self.env['biblioteca.libro'].search_count([('title', '=', record.title ), ('year', '=', record.year)])
-            print(cuentaRepes)
-            if cuentaRepes > 1:
-                raise ValidationError("Fields title and year must be different from another book registered")
+            if record.title and record.year:
+                cuentaRepes = self.env['biblioteca.libro'].search_count([('title', '=', record.title ), ('year', '=', record.year)])
+                print(cuentaRepes)
+                if cuentaRepes > 1:
+                    raise ValidationError("Fields title and year must be different from another book registered")
 
     
     
