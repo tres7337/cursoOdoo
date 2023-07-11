@@ -9,8 +9,20 @@
 				<field name="arch" type="xml">
 					<form string="Reserva">
 						<sheet>
+							<group name="view_name" col="1">
+								<field name="name" class="oe_inline" />
+							</group>
 							<group>
-								<field name="name" />
+								<group>
+									<field name="start_date"/>
+									<field name="category_id"/>
+									<field name="employee_id"/>
+								</group>
+								<group>
+									<field name="end_date"/>
+									<field name="book_id"/>
+									<field name="state"/>
+								</group>
 							</group>
 						</sheet>
 					</form>
@@ -23,7 +35,11 @@
 				<field name="model">biblioteca.reserva</field>
 				<field name="arch" type="xml">
 					<tree>
-						<field name="name" />
+						<field name="start_date" />
+						<field name="end_date" />
+						<field name="book_id" />
+						<field name="employee_id" />
+						<field name="state" />
 					</tree>
 				</field>
 			</record>

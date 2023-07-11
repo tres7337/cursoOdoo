@@ -13,7 +13,7 @@ class bibliotecaLibro(models.Model):
     """ Modelo libro de la biblioteca """
     _name = "biblioteca.libro"
     _description = "Libro de una biblioteca"
-    _order = "name desc"
+    _order = "title desc"
     
     
     title = fields.Char('Title', required=True)

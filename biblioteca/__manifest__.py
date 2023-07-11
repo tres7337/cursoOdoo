@@ -15,7 +15,7 @@
     'version': '15.0.0.0.1',
     'installable': True,
     'application': True,
-    'depends': ['base',
+    'depends': ['base','hr'
                 ],
     
     # always loaded
