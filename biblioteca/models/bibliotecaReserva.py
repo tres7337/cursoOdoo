@@ -39,11 +39,11 @@ class bibliotecaReserva(models.Model):
     def _calculaNombre(self):
         for record in self:
             value = ''
-            if self.employee_id and self.employee_id.name:
-                value += self.employee_id.name
+            if record.employee_id and record.employee_id.name:
+                value += record.employee_id.name
             value +=' - '
-            if self.book_id and self.book_id.name:
-                value += self.book_id.name
-            self.name = value
+            if record.book_id and record.book_id.name:
+                value += record.book_id.name
+            record.name = value
     
     

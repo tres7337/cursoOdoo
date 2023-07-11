@@ -7,6 +7,7 @@ Created on 6 jul 2023
 
 from odoo import api, fields, models, _
 from datetime import datetime
+from openerp.exceptions import ValidationError
 
 
 class bibliotecaLibro(models.Model):
@@ -54,6 +55,15 @@ class bibliotecaLibro(models.Model):
     )
     
     book = fields.Binary('Book file', required=True)
+    
+    @api.constrains('title','year')
+    def _compruebaLibro(self):
+        for record in self:
+            cuentaRepes = self.env['biblioteca.libro'].search_count([('title', '=', record.title ), ('year', '=', record.year)])
+            print(cuentaRepes)
+            if cuentaRepes > 1:
+                raise ValidationError("Fields title and year must be different from another book registered")
+
     
     
     
