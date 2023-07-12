@@ -29,7 +29,7 @@
                         			<field name="synopsis"/>
                         		</page>
                         		<page string="Categories" name="categories">
-                        			<field name="categ_ids"/>
+                        			<field name="categ_ids" widget="many2many_tags" string="Tags de categorias"/>
                         		</page>
                         	</notebook>
 						</sheet>
