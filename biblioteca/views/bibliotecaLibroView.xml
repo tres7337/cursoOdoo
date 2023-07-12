@@ -31,6 +31,9 @@
                         		<page string="Categories" name="categories">
                         			<field name="categ_ids" widget="many2many_tags" string="Tags de categorias"/>
                         		</page>
+                        		<page string="Reviews" name="reviews">
+                        			<field name="reviews"/>
+                        		</page>
                         	</notebook>
 						</sheet>
 					</form>

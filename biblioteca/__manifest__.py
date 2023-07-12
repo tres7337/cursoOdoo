@@ -26,6 +26,7 @@
         'views/bibliotecaLibroView.xml',
         'views/bibliotecaReservaView.xml',
         'views/bibliotecaCategoriaView.xml',
+        'views/bibliotecaReviewView.xml',
     ],
     'qweb': [
 

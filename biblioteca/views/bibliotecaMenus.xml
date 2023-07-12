@@ -17,13 +17,22 @@
         	action="bibliotecaReservaAccion"
          	sequence="0"
 			/>
+	
+	<!-- Reviews -->
+	<menuitem 
+        	id="bibliotecaReview" 
+        	name="Review"
+        	parent="bibliotecaMenuPrincipal" 
+        	action="bibliotecaReviewAccion"
+         	sequence="1"
+			/>
 
 	<!-- Configuracion -->		
 	<menuitem
             id="bibliotecaConfiguracion"
             name="Configuracion"
             parent="bibliotecaMenuPrincipal"
-            sequence="1" 
+            sequence="2" 
             /> 
 	
 	<!-- Libro -->

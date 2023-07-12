@@ -22,4 +22,10 @@
 		<field name="view_mode">tree,form</field>
 	</record>
 	
+	<record model="ir.actions.act_window" id="bibliotecaReviewAccion">
+		<field name="name">Accion review</field>
+		<field name="res_model">biblioteca.review</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+	
 </odoo>

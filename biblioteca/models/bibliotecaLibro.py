@@ -7,7 +7,7 @@ Created on 6 jul 2023
 
 from odoo import api, fields, models, _
 from datetime import datetime
-from openerp.exceptions import ValidationError
+from odoo.exceptions import ValidationError
 
 
 class bibliotecaLibro(models.Model):
@@ -55,6 +55,8 @@ class bibliotecaLibro(models.Model):
     )
     
     book = fields.Binary('Book file', required=True)
+    reviews = fields.One2many('biblioteca.review','book_id','Reviews')
+
     
     @api.constrains('title','year')
     def _compruebaLibro(self):

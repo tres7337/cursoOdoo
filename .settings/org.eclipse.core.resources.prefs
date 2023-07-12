@@ -5,5 +5,6 @@ encoding//biblioteca/models/__init__.py=utf-8
 encoding//biblioteca/models/bibliotecaCategoria.py=utf-8
 encoding//biblioteca/models/bibliotecaLibro.py=utf-8
 encoding//biblioteca/models/bibliotecaReserva.py=utf-8
+encoding//biblioteca/models/bibliotecaReview.py=utf-8
 encoding//biblioteca/models/bibliotecaTestModel.py=utf-8
 encoding//biblioteca/models/bibliotecaTestModelDos.py=utf-8

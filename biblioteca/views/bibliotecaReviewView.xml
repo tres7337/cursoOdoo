@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	  <data>
+		  
+		  	<!-- Vista form de review -->
+			<record id="bibliotecaReviewFormView" model="ir.ui.view">
+				<field name="name">Vista formulario de review</field>
+				<field name="model">biblioteca.review</field>
+				<field name="arch" type="xml">
+					<form string="Review">
+						<sheet>
+							<group>
+								<field name="employee_id" widget="many2one_avatar_employee"/>
+								<field name="book_id"/>
+								<field name="rating" widget="priority"/>
+							</group>
+							<group>
+                        		<field name="text"/>
+                        	</group>
+						</sheet>
+					</form>
+				</field>
+			</record>
+	
+			<!-- Vista tree de review -->
+			<record id="bibliotecaReviewTreeView" model="ir.ui.view">
+				<field name="name">Vista arbol de review</field>
+				<field name="model">biblioteca.review</field>
+				<field name="arch" type="xml">
+					<tree>
+						<field name="employee_id" widget="many2one_avatar_employee"/>
+						<field name="book_id"/>
+						<field name="rating"/>
+						<field name="rating" widget="priority"/>
+					</tree>
+				</field>
+			</record>
+		</data>
+</odoo>
