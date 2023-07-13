@@ -16,7 +16,7 @@
 								<group>
 									<field name="title"/>
 									<field name="author"/>
-									<field name="editorial"/>
+									<field name="editorial" placeholder="Anaya"/>
 								</group>
 								<group>
 									<field name="year"/>

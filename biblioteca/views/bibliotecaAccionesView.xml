@@ -6,6 +6,7 @@
 		<field name="name">Accion libro</field>
 		<field name="res_model">biblioteca.libro</field>
 		<field name="view_mode">tree,form</field>
+		<field name="context">{'default_pages':100}</field>
 	</record>
 	
 	<!-- Categoria -->

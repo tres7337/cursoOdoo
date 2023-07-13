@@ -28,6 +28,8 @@ class bibliotecaReserva(models.Model):
     book_id = fields.Many2one('biblioteca.libro','Book', required=True, domain="[('categ_ids','in',category_id)]")
     start_date = fields.Date('Start date',default=fields.Date.context_today, required=True)
     end_date = fields.Date('End date', required=True)
+    notes= fields.Text('Notes') 
+
     
     state = fields.Selection ([('borrador','Borrador'),
                                ('aprobar','Aprobar'),
