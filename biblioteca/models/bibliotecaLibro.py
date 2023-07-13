@@ -56,7 +56,7 @@ class bibliotecaLibro(models.Model):
     
     book = fields.Binary('Book file', required=True)
     reviews = fields.One2many('biblioteca.review','book_id','Reviews')
-
+    
     
     @api.constrains('title','year')
     def _compruebaLibro(self):

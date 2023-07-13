@@ -7,7 +7,7 @@
 				<field name="name">Vista formulario de review</field>
 				<field name="model">biblioteca.review</field>
 				<field name="arch" type="xml">
-					<form string="Review">
+					<form string="Review" edit="0" duplicate="0">
 						<sheet>
 							<group>
 								<field name="employee_id" widget="many2one_avatar_employee"/>
@@ -27,7 +27,9 @@
 				<field name="name">Vista arbol de review</field>
 				<field name="model">biblioteca.review</field>
 				<field name="arch" type="xml">
-					<tree>
+					<tree string="Reviews" decoration-success="rating == '5'" decoration-info="rating == '4'"
+										   decoration-primary="rating == '3'" decoration-warning="rating == '2'"
+										   decoration-danger="rating == '1'" edit="0">
 						<field name="employee_id" widget="many2one_avatar_employee"/>
 						<field name="book_id"/>
 						<field name="rating"/>

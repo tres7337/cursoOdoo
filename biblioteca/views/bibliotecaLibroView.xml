@@ -32,7 +32,13 @@
                         			<field name="categ_ids" widget="many2many_tags" string="Tags de categorias"/>
                         		</page>
                         		<page string="Reviews" name="reviews">
-                        			<field name="reviews"/>
+                        			<field name="reviews" >
+                        				<tree edit="0" delete="0" create="0" >
+                        					<field name="employee_id" />
+                        					<field name="rating" />
+                        					<field name="text" />
+                        				</tree>
+                        			</field>
                         		</page>
                         	</notebook>
 						</sheet>
