@@ -53,6 +53,9 @@
 							<filter string="By employee" name="employee_group" context="{'group_by':'employee_id'}" />
 							<filter string="By book" name="book_group" context="{'group_by':'book_id'}" />
 						</group>
+						<searchpanel>
+							<field name="employee_id" />
+						</searchpanel>
 					</search>
 				</field>
 			</record>
