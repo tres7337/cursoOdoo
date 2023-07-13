@@ -60,5 +60,25 @@
 					</tree>
 				</field>
 			</record>
+			
+			
+			<!-- Busquedas y grupos de libro -->
+			<record id="bibliotecaLibroSearchView" model="ir.ui.view">
+				<field name="name">Vista de busqueda de libro</field>
+				<field name="model">biblioteca.libro</field>
+				<field name="arch" type="xml">
+					<search string="Search Books">
+						<field name="title" filter_domain="[('title','ilike',self)]"/>
+						<field name="author" filter_domain="[('author','ilike',self)]"/>
+						<filter string="Big book" domain="[('pages','>=',300)]" name="big_book" />
+						<filter string="Thin book" domain="[('pages','&lt;',300)]" name="thin_book" />
+						<group string="Group by">
+							<filter string="By Year" name="year_group" context="{'group_by':'year'}" />
+							<filter string="By author" name="author_group" context="{'group_by':'author'}" />
+						</group>
+					</search>
+				</field>
+			</record>
+			
 		</data>
 </odoo>

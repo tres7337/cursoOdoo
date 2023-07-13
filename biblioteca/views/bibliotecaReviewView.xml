@@ -37,5 +37,25 @@
 					</tree>
 				</field>
 			</record>
+			
+			<!-- Busquedas y grupos de review -->
+			<record id="bibliotecaReviewSearchView" model="ir.ui.view">
+				<field name="name">Vista de busqueda de review</field>
+				<field name="model">biblioteca.review</field>
+				<field name="arch" type="xml">
+					<search string="Busqueda reviews">
+						<field name="book_id" filter_domain="[('book_id.title','ilike',self)]"/>
+						<field name="employee_id" filter_domain="[('employee_id.name','ilike',self)]"/>
+						<filter string="Libro aprobado" domain="[('rating','>=',3)]" name="libroAprobado" />
+						<filter string="Libro suspenso" domain="[('rating','&lt;',3)]" name="libroSuspenso" />
+						<group string="Group by">
+							<filter string="By rating" name="rating_group" context="{'group_by':'rating'}" />
+							<filter string="By employee" name="employee_group" context="{'group_by':'employee_id'}" />
+							<filter string="By book" name="book_group" context="{'group_by':'book_id'}" />
+						</group>
+					</search>
+				</field>
+			</record>
+			
 		</data>
 </odoo>
