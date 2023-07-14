@@ -9,6 +9,16 @@
 				<field name="arch" type="xml">
 					<form string="Reserva">
 						<sheet>
+							<div class="oe_button_box" name="button_box">
+                            	<button class="oe_stat_button" name="view_all_employees"
+                                	type="object" icon="fa-calendar">
+                                	<field string="Reservadores" name="num_employee" widget="statinfo" /> 
+                                </button>
+                                <button class="oe_stat_button" name="view_all_books_employee"
+                                	type="object" icon="fa-book">
+                                	<field string="Books" name="num_book" widget="statinfo" /> 
+                                </button>
+                        	</div>
 							<group name="view_name" col="1">
 								<field name="name" class="oe_inline" />
 							</group>

@@ -67,6 +67,26 @@ class bibliotecaLibro(models.Model):
                 if cuentaRepes > 1:
                     raise ValidationError("Fields title and year must be different from another book registered")
 
+
+    num_booking = fields.Integer('Bookings', compute='_calculaNumeroReservas')
+    
+    
+    def view_all_book_bookings(self):
+        self.ensure_one()
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Bookings',
+            'view_mode': 'tree',
+            'res_model': 'biblioteca.reserva',
+            'domain': [('book_id', '=', self.id)],
+        }
+    
+    def _calculaNumeroReservas(self):
+        num = 0
+        bookings = self.env['biblioteca.reserva'].search_count([('book_id','=',self.id)])
+        if bookings > 0:
+            num = bookings
+        self.num_booking = num
     
     
     

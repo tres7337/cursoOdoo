@@ -38,3 +38,27 @@ class bibliotecaReview(models.Model):
             if record.book_id and record.book_id.name:
                 value += record.book_id.name
             record.name = value
+            
+            
+    num_employee = fields.Integer('Employees', compute='_get_num_employees')
+    
+
+    def view_all_employees(self):
+        self.ensure_one()
+        ids = self.env['biblioteca.review'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        list = []
+        for id in ids:
+            list.append(id['employee_id'][0])
+            
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Employees',
+            'view_mode': 'tree',
+            'res_model': 'hr.employee',
+            'domain': [('id', 'in', list)],
+        }
+        
+    def _get_num_employees(self):
+        ids = self.env['biblioteca.review'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        self.num_employee = len(ids) or 0
+    

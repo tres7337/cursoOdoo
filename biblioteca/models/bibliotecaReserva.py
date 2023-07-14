@@ -68,3 +68,51 @@ class bibliotecaReserva(models.Model):
         fecha = fields.Date.from_string(start_date)
         fecha_fin = fecha + timedelta(days=3)  
         return fecha_fin.strftime("%Y-%m-%d")
+    
+    
+    num_employee = fields.Integer('Employees', compute='_get_num_employees')
+    
+
+    def view_all_employees(self):
+        self.ensure_one()
+        ids = self.env['biblioteca.reserva'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        list = []
+        for id in ids:
+            list.append(id['employee_id'][0])
+            
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Employees',
+            'view_mode': 'tree',
+            'res_model': 'hr.employee',
+            'domain': [('id', 'in', list)],
+        }
+        
+    def _get_num_employees(self):
+        ids = self.env['biblioteca.reserva'].read_group([ ("book_id", "=", self.book_id.id)], fields=['employee_id'], groupby=['employee_id'])
+        self.num_employee = len(ids) or 0
+        
+    
+    
+    num_book = fields.Integer('Books', compute='_get_num_employee_books')
+    
+    def view_all_books_employee(self):
+        self.ensure_one()
+        ids = self.env['biblioteca.reserva'].read_group([ ("employee_id", "=", self.employee_id.id)], fields=['book_id'], groupby=['book_id'])
+        list = []
+        for id in ids:
+            list.append(id['book_id'][0])
+        return {
+            'type': 'ir.actions.act_window',
+            'name': 'Employee books',
+            'view_mode': 'tree',
+            'res_model': 'biblioteca.libro',
+            'domain': [('id', 'in', list)],
+        }
+        
+    def _get_num_employee_books(self):
+        ids = self.env['biblioteca.reserva'].read_group([ ("employee_id", "=", self.employee_id.id)], fields=['book_id'], groupby=['book_id'])
+        self.num_book = len(ids) or 0
+    
+    
+    
