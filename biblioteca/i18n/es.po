@@ -1,0 +1,564 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* biblioteca
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-17 08:18+0000\n"
+"PO-Revision-Date: 2023-07-17 10:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#. module: biblioteca
+#: model:ir.actions.act_window,name:biblioteca.bibliotecaCategoriaAccion
+msgid "Accion categoria"
+msgstr "Acción categoría"
+
+#. module: biblioteca
+#: model:ir.actions.act_window,name:biblioteca.bibliotecaLibroAccion
+msgid "Accion libro"
+msgstr "Acción libro"
+
+#. module: biblioteca
+#: model:ir.actions.act_window,name:biblioteca.bibliotecaReservaAccion
+msgid "Accion reserva"
+msgstr "Acción reserva"
+
+#. module: biblioteca
+#: model:ir.actions.act_window,name:biblioteca.bibliotecaReviewAccion
+msgid "Accion review"
+msgstr "Acción reseña"
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Anaya"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_reserva__state__aprobar
+msgid "Aprobar"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__author
+msgid "Author"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaMenuPrincipal
+msgid "Biblioteca"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+msgid "Big book"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__book_id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__book_id
+msgid "Book"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__book
+msgid "Book file"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__num_booking
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Bookings"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__num_book
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaFormView
+msgid "Books"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_reserva__state__borrador
+msgid "Borrador"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__4
+msgid "Buena"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "Busqueda reservas"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "Busqueda reviews"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+msgid "By Year"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+msgid "By author"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "By book"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "By employee"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "By rating"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "By state"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "Caduca la reserva hoy"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_reserva__state__caducado
+msgid "Caducado"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaCategoria
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaCategoriaFormView
+msgid "Categoria"
+msgstr "Categoría"
+
+#. module: biblioteca
+#: model:ir.model,name:biblioteca.model_biblioteca_categoria
+msgid "Categoria de un libro"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__categ_ids
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Categories"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__category_id
+msgid "Category"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaConfiguracion
+msgid "Configuracion"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__create_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__create_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__create_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__create_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__create_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__create_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__create_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__create_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__create_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__create_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_test_model__f_selection__4
+msgid "Cuarto valor"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__display_name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__display_name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__display_name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__display_name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__display_name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__editorial
+msgid "Editorial"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model,name:biblioteca.model_biblioteca_test_model
+#: model:ir.model,name:biblioteca.model_biblioteca_test_model_dos
+msgid "Ejemplo de campos"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__employee_id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__num_employee
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__num_employee
+msgid "Employees"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__end_date
+msgid "End date"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_selection
+msgid "F Selection"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_binary
+msgid "Field Binary"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_boolean
+msgid "Field Booleano"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_date
+msgid "Field Date"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_datetime
+msgid "Field Datetime"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_float
+msgid "Field Float"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_integer
+msgid "Field Integer"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_combo
+msgid "Field Many2one"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_tabla
+msgid "Field One2many"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__name
+msgid "Field Short Text"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_text
+msgid "Field Text"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_html
+msgid "Field WYSIWYG"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_computed
+msgid "Field computed"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__f_related
+msgid "Field related"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "Group by"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__id
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__id
+msgid "ID"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "Inició la reserva hoy"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria____last_update
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro____last_update
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva____last_update
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review____last_update
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model____last_update
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__write_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__write_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__write_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__write_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__write_uid
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__write_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__write_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__write_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__write_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model__write_date
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaLibro
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Libro"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "Libro aprobado"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model,name:biblioteca.model_biblioteca_libro
+msgid "Libro de una biblioteca"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewSearchView
+msgid "Libro suspenso"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__2
+msgid "Mala"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_test_model_dos__f_many2one
+msgid "Many2one"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__3
+msgid "Mediocre"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__5
+msgid "Muy buena"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__1
+msgid "Muy mala"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__name
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__name
+msgid "Name"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_categoria__name
+msgid "Nombre"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__notes
+msgid "Notes"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__pages
+msgid "Number of pages"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_test_model__f_selection__1
+msgid "Primer valor"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_test_model__f_selection__5
+msgid "Quinto valor"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__rating
+msgid "Rating"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_reserva__state__rechazado
+msgid "Rechazado"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaReserva
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaFormView
+msgid "Reserva"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model,name:biblioteca.model_biblioteca_reserva
+msgid "Reserva en la biblioteca"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_reserva__state__reservado
+msgid "Reservado"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaFormView
+msgid "Reservadores"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.ui.menu,name:biblioteca.bibliotecaReview
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewFormView
+msgid "Review"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model,name:biblioteca.model_biblioteca_review
+msgid "Review de un libro"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewFormView
+msgid "Reviewers"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__reviews
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReviewTreeView
+msgid "Reviews"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+msgid "Search Books"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_test_model__f_selection__2
+msgid "Segundo valor"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_review__rating__0
+msgid "Sin review"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "Start current Month"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__start_date
+msgid "Start date"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaReservaSearchView
+msgid "Start prev Month"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_reserva__state
+msgid "State"
+msgstr ""
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__synopsis
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Synopsis"
+msgstr ""
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroFormView
+msgid "Tags de categorias"
+msgstr "Etiquetas de categorías"
+
+#. module: biblioteca
+#: model:ir.model.fields.selection,name:biblioteca.selection__biblioteca_test_model__f_selection__3
+msgid "Tercer valor"
+msgstr "Tercer valor"
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_review__text
+msgid "Text review"
+msgstr "Texto de la reseña"
+
+#. module: biblioteca
+#: model_terms:ir.ui.view,arch_db:biblioteca.bibliotecaLibroSearchView
+msgid "Thin book"
+msgstr "Libro fino"
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__title
+msgid "Title"
+msgstr "Título"
+
+#. module: biblioteca
+#: model:ir.model.fields,field_description:biblioteca.field_biblioteca_libro__year
+msgid "Year"
+msgstr "Año"
