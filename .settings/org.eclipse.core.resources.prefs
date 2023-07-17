@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
 encoding//biblioteca/__init__.py=utf-8
 encoding//biblioteca/__manifest__.py=utf-8
+encoding//biblioteca/migrations/15.0.2.0.0/pre-rellenarCampoNotas.py=utf-8
 encoding//biblioteca/models/__init__.py=utf-8
 encoding//biblioteca/models/bibliotecaCategoria.py=utf-8
 encoding//biblioteca/models/bibliotecaLibro.py=utf-8
