@@ -5,3 +5,4 @@ from . import bibliotecaLibro
 from . import bibliotecaCategoria
 from . import bibliotecaReserva
 from . import bibliotecaReview
+from . import product_template
