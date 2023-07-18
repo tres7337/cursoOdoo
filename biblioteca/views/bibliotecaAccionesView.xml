@@ -20,13 +20,13 @@
 	<record model="ir.actions.act_window" id="bibliotecaReservaAccion">
 		<field name="name">Accion reserva</field>
 		<field name="res_model">biblioteca.reserva</field>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">tree,form,kanban</field>
 	</record>
 	
 	<record model="ir.actions.act_window" id="bibliotecaReviewAccion">
 		<field name="name">Accion review</field>
 		<field name="res_model">biblioteca.review</field>
-		<field name="view_mode">tree,form</field>
+		<field name="view_mode">tree,form,kanban</field>
 	</record>
 	
 </odoo>

@@ -82,5 +82,52 @@
 				</field>
 			</record>
 			
+			<!-- Vista kanban de reserva -->
+			<record id="biblioteca_reserva_kanban_view" model="ir.ui.view">
+				<field name="name">Library Reserva Kanban view</field>
+				<field name="model">biblioteca.reserva</field>
+				<field name="arch" type="xml">
+					<kanban string="Reservas">
+						<templates>
+							<t t-name="kanban-box">
+                        		<div class="oe_kanban_global_click">
+		                            <div class="oe_kanban_details">
+		                                <strong class="o_kanban_record_title">
+		                                    <span>
+		                                        <i class="fa fa-user"></i>
+		                                        <b>
+		                                            <field name="employee_id"/>
+		                                        </b>
+		                                    </span>
+		                                </strong>
+		                                <div name="book" class="mt-1">
+		                                    
+		                                    <span>
+		                                        <i class="fa fa-book"></i>
+		                                          <field name="book_id"/>
+		                                    </span>
+		                                </div>
+		                                <div name="end_date" class="mt-1">
+		                                    
+		                                    <span>
+		                                        <i class="fa fa-calendar"></i>
+		                                          <field name="end_date"/>
+		                                    </span>
+		                                </div>
+		                                <div name="state" class="mt-1">
+		                                    
+		                                    <span>
+		                                        <i class="fa fa-info"></i>
+		                                          <field name="state"/>
+		                                    </span>
+		                                </div>
+		                            </div>
+                       			</div>
+                    		</t>				
+						</templates>
+					</kanban>
+				</field>
+			</record>
+			
 		</data>
 </odoo>
