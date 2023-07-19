@@ -10,3 +10,5 @@ encoding//biblioteca/models/bibliotecaReview.py=utf-8
 encoding//biblioteca/models/bibliotecaTestModel.py=utf-8
 encoding//biblioteca/models/bibliotecaTestModelDos.py=utf-8
 encoding//biblioteca/models/product_template.py=utf-8
+encoding//biblioteca/wizard/__init__.py=utf-8
+encoding//biblioteca/wizard/library_booking_wizard.py=utf-8

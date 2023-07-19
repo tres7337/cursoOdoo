@@ -29,4 +29,14 @@
 		<field name="view_mode">tree,form,kanban</field>
 	</record>
 	
+	<record id="library_booking_wizard_action" model="ir.actions.act_window">
+         <field name="name">Launch the booking Wizard</field>
+         <field name="res_model">library.booking.wizard</field>
+         <field name="view_mode">form</field>
+         <field name="view_id" ref="library_booking_wizard_view"/>
+         <field name="target">new</field>
+         <field name="binding_model_id" ref="biblioteca.model_biblioteca_reserva" />
+         <field name="binding_view_types">list</field>
+    </record>
+	
 </odoo>

@@ -30,6 +30,7 @@
         'views/product_template_view.xml',
         'report/library_book_report.xml',
         'report/library_booking_report.xml',
+        'wizard/library_booking_wizard.xml',
     ],
     'qweb': [
 

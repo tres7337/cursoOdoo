@@ -3,3 +3,4 @@ access_libro,biblioteca_access_libro,model_biblioteca_libro,base.group_user,1,1,
 acess_categoria,biblioteca_access_categoria,model_biblioteca_categoria,base.group_user,1,1,1,1
 acess_reserva,biblioteca_access_reserva,model_biblioteca_reserva,base.group_user,1,1,1,1
 acess_review,biblioteca_access_review,model_biblioteca_review,base.group_user,1,1,1,1
+access_booking_wizard,library_access_booking_wizard,model_library_booking_wizard,base.group_user,1,1,1,1
