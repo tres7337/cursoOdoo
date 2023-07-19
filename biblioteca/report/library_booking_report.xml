@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="library_booking_report">
+	    <t t-call="web.html_container">
+	        <t t-foreach="docs" t-as="o">
+	            <t t-call="web.external_layout">
+	                <div class="page">
+	                    <h2>Booking info</h2>
+	                    <p><b>Empleado:</b> <span t-field="o.employee_id.name"/></p>
+		                <p><b>Libro:</b> <span t-field="o.book_id.name"/></p>
+	                    <p><b>Fecha inicio:</b> <span t-field="o.start_date"/></p>
+	                    <p><b>Fecha fin:</b> <span t-field="o.end_date"/></p>
+	                    <p><b>Estado:</b> <span t-field="o.state"/></p>
+	                </div>
+	            </t>
+	        </t>
+	    </t>
+	</template>
+
+	<record id="library_booking_report_action" model="ir.actions.report">
+		<field name="name">Print booking report</field>
+		<field name="model">biblioteca.reserva</field>
+		<field name ="report_type">qweb-pdf</field>
+		<field name="report_name">biblioteca.library_booking_report</field>
+		<field name="report_file">biblioteca.library_booking_report</field>
+		<field name="print_report_name">'Reserva - %s (%s)' % (object.employee_id.name, object.end_date)</field>
+		<field name="binding_model_id" ref="model_biblioteca_reserva"/>
+	</record>
+</odoo>
