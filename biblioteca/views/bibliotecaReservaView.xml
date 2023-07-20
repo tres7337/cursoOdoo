@@ -8,6 +8,14 @@
 				<field name="model">biblioteca.reserva</field>
 				<field name="arch" type="xml">
 					<form string="Reserva">
+						<header>
+							 <button name="btn_state_darft_to_approve" string="Send approver" type="object" class="oe_highlight" state="borrador" attrs="{'invisible':[('state','!=','borrador')]}"/>
+							 <button name="btn_state_approve_to_reserve" string="Approve" type="object" class="oe_highlight" state="aprobar" attrs="{'invisible':[('state','!=','aprobar')]}"/>
+							 <button name="btn_state_approve_to_reject" string="Reject" type="object" class="oe_highlight" state="aprobar" attrs="{'invisible':[('state','!=','aprobar')]}"/>
+							 <button name="btn_state_reserve_to_reserve" string="Reserve" type="object" class="oe_highlight" state="reservado" attrs="{'invisible':['|',('state','!=','reservado'),('num_bookings','=','3')]}"/>
+							 <button name="btn_state_reserve_to_expired" string="Expire" type="object" class="oe_highlight" state="reservado" attrs="{'invisible':[('state','!=','reservado')]}"/>
+							<field name="state" widget="statusbar" statusbar_visible="borrador,aprobar,reservado,caducado,rechazado" readonly="1" />
+						</header>
 						<sheet>
 							<div class="oe_button_box" name="button_box">
                             	<button class="oe_stat_button" name="view_all_employees"
@@ -31,7 +39,8 @@
 								<group>
 									<field name="end_date"/>
 									<field name="book_id" options="{'no_create_edit':True,'no_quick_create':True,'no_create':True,'no_open':True}"/>
-									<field name="state" widget="selection_badge" />
+									<!-- <field name="state" widget="selection_badge" /> -->
+									<field name="num_bookings" widget="selection_badge" attrs="{'invisible':[('state','!=','reservado')]}"/>
 								</group>
 								<group>
 									<field name="notes" attrs="{'readonly': [('state','!=','borrador')]}"/>

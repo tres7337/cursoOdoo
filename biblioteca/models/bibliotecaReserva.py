@@ -110,9 +110,28 @@ class bibliotecaReserva(models.Model):
             'domain': [('id', 'in', list)],
         }
         
+        
+    num_bookings = fields.Selection ([('1',_('1 Reserva')),('2',_('2 Reservas')),('3',_('3 Reservas'))], default="1")
+
     def _get_num_employee_books(self):
         ids = self.env['biblioteca.reserva'].read_group([ ("employee_id", "=", self.employee_id.id)], fields=['book_id'], groupby=['book_id'])
         self.num_book = len(ids) or 0
     
+    def btn_state_darft_to_approve(self):
+        self.write({'state':'aprobar'})
+    
+    def btn_state_approve_to_reserve(self):
+        new_end_date = self._calculaFechaFin(self.start_date)
+        self.write({'state':'reservado', 'end_date':new_end_date})
+    
+    def btn_state_approve_to_reject(self):
+        self.write({'state':'rechazado'})
+    
+    def btn_state_reserve_to_reserve(self):
+        value = int(self.num_bookings) + 1
+        self.write({'num_bookings':str(value)})
+    
+    def btn_state_reserve_to_expired(self):
+        self.write({'state':'caducado'})
     
     
